@@ -75,7 +75,7 @@ Genome).
 It's possible that the `let lis` in Line 2 _will never execute_! While
 JavaScript is executing `synchronousFetch` it will not be able to animate gifs,
 you won't be able to open a new tab, it will stop streaming SoundCoud, it will
-appear "locked up." Recall our chef metaphor, while they prepare the biscuits
+appear "locked up." Recall our chef metaphor: while the chef prepares the biscuits,
 the mashed potatoes grow cold and the boiled goose congeals. Gross.
 
 ## Describe an Asynchronous Code Bloc
@@ -132,7 +132,7 @@ function main(){
 main();
 ```
 
-We can copy and paste this into a DevTools console to see the result. But it
+We can copy and paste this into a DevTools console to see the result. It
 matches our default model of "how code runs."
 
 ## Identify an Asynchronous Code Bloc
