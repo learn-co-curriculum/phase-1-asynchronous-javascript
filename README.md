@@ -15,8 +15,8 @@ text, they're listening for clicks and scrolls, they're streaming a SoundCloud
 demo in a background tab, and they're running JavaScript programs.
 
 To do all that work efficiently, browsers use an _asynchronous_ execution model.
-That's a fancy way of saying "they do little bits of lots of things until
-they're done."
+That's a fancy way of saying "they do little bits of lots of tasks until
+the tasks are done."
 
 In this lesson we'll build a foundation of understanding around the
 asynchronous execution model of JavaScript.
