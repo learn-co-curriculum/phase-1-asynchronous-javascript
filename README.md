@@ -83,7 +83,7 @@ the mashed potatoes grow cold and the boiled goose congeals. Gross.
 Asynchronous code in JavaScript looks a lot like event handlers. And if we
 think about it, that makes sense. You tell JavaScript:
 
-> Hey, do this thing. _And then_ go do whatever you maintenance you need:
+> Hey, do this thing. _And then_ go do whatever maintenance you need:
 > animate that gif, play some audio from SoundCloud, whatever. But when that
 > first thing has an "I'm done" event, go **back** to it and do some work that
 > I defined in a function when I called it.
@@ -113,7 +113,7 @@ code.
 
 ## Identify a Synchronous Code Bloc
 
-As we have experienced in JavaScript, our code execute top-to-bottom,
+As we have experienced in JavaScript, our code executes top-to-bottom,
 left-to-right.
 
 ```js
@@ -172,7 +172,7 @@ No, me first
 Hello World!
 ```
 
-JavaScript is so committed to trying to squeeze in work when something else
+JavaScript is so committed to trying to squeeze in work
 when it gets a chance that this has the exact same output!
 
 ```js
