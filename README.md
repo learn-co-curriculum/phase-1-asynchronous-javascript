@@ -24,25 +24,22 @@ asynchronous execution model of JavaScript.
 ## Establish a Metaphor for Synchronous Versus Asynchronous Work
 
 Let's imagine a chef in a kitchen preparing a big meal. There's only one chef in
-this kitchen. The chef could prepare a boiled goose, then prepare some potatoes,
-then prepare some biscuits, then prepare a salad, and then serve it.
+this kitchen. The chef could prepare a turkey, then prepare some potatoes,
+then prepare some bread, then prepare green beans, and then serve it.
 
-![Boiled Goose](https://media.giphy.com/media/zE0zR9u9oR54Y/giphy.gif)
-
-Our diners would be treated to cold boiled goose, hardened potatoes, cold
-biscuits, and a fresh salad! This is not the goal. This meal was prepared in a
-_synchronous_ model: one-thing-after-the-other. Whatever happened "blocked" the
-rest of things that were waiting for work.
+Our diners would be treated to turkey, bread, green beans, and potatoes! This is
+not the goal. This meal was prepared in a _synchronous_ model: one-thing-after-the-other.
+Whatever happened "blocked" the rest of things that were waiting for work.
 
 _Instead_, our chef should move between each of these tasks quickly. The chef
 should use the _asynchronous_ execution model browsers use. They should stuff
-the goose, they should measure the ingredients for the biscuits, they should
+the Turkey, they should measure the ingredients for the bread, they should
 peel the potatoes, etc. in a loop, _as fast as possible_ so that all the tasks
 _seem_ to be advancing at the same time. If the chef were to adopt this
 _asynchronous_ model of work, the diners would be treated to piping-hot
-boiled goose, steaming potatoes, soft biscuits, and a fresh salad.
+turkey, steaming potatoes, soft bread, and a fresh green beans.
 
-![Stuffing](https://media.giphy.com/media/AGc4wSw993mOQ/giphy.gif)
+![](https://curriculum-content.s3.amazonaws.com/fewpjs/fewpjs-asynchrony/Image_42_AsynchronyIllustrations.png)
 
 ## Describe a Synchronous Code Bloc
 
@@ -75,8 +72,8 @@ Genome).
 It's possible that the `let lis` in Line 2 _will never execute_! While
 JavaScript is executing `synchronousFetch` it will not be able to animate gifs,
 you won't be able to open a new tab, it will stop streaming SoundCoud, it will
-appear "locked up." Recall our chef metaphor: while the chef prepares the biscuits,
-the mashed potatoes grow cold and the boiled goose congeals. Gross.
+appear "locked up." Recall our chef metaphor: while the chef prepares the bread,
+the mashed potatoes grow cold and the boiled turkey congeals. Gross.
 
 ## Describe an Asynchronous Code Bloc
 
