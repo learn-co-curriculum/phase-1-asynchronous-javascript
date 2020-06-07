@@ -71,7 +71,7 @@ Genome).
 
 It's possible that the `let lis` in Line 2 _will never execute_! While
 JavaScript is executing `synchronousFetch` it will not be able to animate gifs,
-you won't be able to open a new tab, it will stop streaming SoundCoud, it will
+you won't be able to open a new tab, it will stop streaming SoundCloud, it will
 appear "locked up." Recall our chef metaphor: while the chef prepares the bread,
 the mashed potatoes grow cold and the boiled turkey congeals. Gross.
 
