@@ -3,10 +3,10 @@
 ## Learning Goals
 
 1. Establish a metaphor for synchronous versus asynchronous work
-2. Describe a synchronous code bloc
-3. Describe an asynchronous code bloc
-4. Identify a synchronous code bloc
-5. Identify an asynchronous code bloc
+2. Describe a synchronous code block
+3. Describe an asynchronous code block
+4. Identify a synchronous code block
+5. Identify an asynchronous code block
 
 ## Introduction
 
@@ -41,7 +41,7 @@ turkey, steaming potatoes, soft bread, and a fresh green beans.
 
 ![](https://curriculum-content.s3.amazonaws.com/fewpjs/fewpjs-asynchrony/Image_42_AsynchronyIllustrations.png)
 
-## Describe a Synchronous Code Bloc
+## Describe a Synchronous Code Block
 
 So far in JavaScript, we've written _synchronous_ code and the execution
 model didn't matter.
@@ -75,7 +75,7 @@ you won't be able to open a new tab, it will stop streaming SoundCoud, it will
 appear "locked up." Recall our chef metaphor: while the chef prepares the bread,
 the mashed potatoes grow cold and the boiled turkey congeals. Gross.
 
-## Describe an Asynchronous Code Bloc
+## Describe an Asynchronous Code Block
 
 Asynchronous code in JavaScript looks a lot like event handlers. And if we
 think about it, that makes sense. You tell JavaScript:
@@ -108,7 +108,7 @@ wild."
 Let's try seeing how synchronous versus asynchronous works in real JavaScript
 code.
 
-## Identify a Synchronous Code Bloc
+## Identify a Synchronous Code Block
 
 As we have experienced in JavaScript, our code executes top-to-bottom,
 left-to-right.
@@ -132,7 +132,7 @@ main();
 We can copy and paste this into a DevTools console to see the result. It
 matches our default model of "how code runs."
 
-## Identify an Asynchronous Code Bloc
+## Identify an Asynchronous Code Block
 
 The easiest asynchronous wrapper function is `window.setTimeout()`. It takes as
 arguments:
