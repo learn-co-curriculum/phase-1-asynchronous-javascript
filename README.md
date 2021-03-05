@@ -73,7 +73,7 @@ With this synchronous approach, JavaScript won't continue to the next line of
 code until `synchronousFetch` has finished executing, so it's possible that the
 `const lis` in Line 2 _will never execute_! Furthermore, while JavaScript is executing
 `synchronousFetch` it will not be able to animate gifs, you won't be able to
-open a new tab, it will stop streaming SoundCoud, it will appear "locked up."
+open a new tab, it will stop streaming SoundCloud, it will appear "locked up."
 Recall our chef metaphor: while the chef prepares the potatoes, the green beans
 grow cold and the turkey congeals. Gross.
 
