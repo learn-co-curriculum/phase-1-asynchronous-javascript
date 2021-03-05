@@ -136,7 +136,7 @@ our default model of "how code runs."
 
 ## Identify an Asynchronous Code Block
 
-The easiest asynchronous wrapper function is `[window.setTimeout()](https://www.w3schools.com/jsref/met_win_settimeout.asp)`. It takes as arguments:
+The easiest asynchronous wrapper function is [`window.setTimeout()`](https://www.w3schools.com/jsref/met_win_settimeout.asp). It takes as arguments:
 
 - a `Function` (the "callback" function)
 - a `Number` representing milliseconds
