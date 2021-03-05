@@ -2,11 +2,11 @@
 
 ## Learning Goals
 
-1. Establish a metaphor for synchronous versus asynchronous work
-2. Describe a synchronous code block
-3. Describe an asynchronous code block
-4. Identify a synchronous code block
-5. Identify an asynchronous code block
+- Establish a metaphor for synchronous versus asynchronous work
+- Describe a synchronous code block
+- Describe an asynchronous code block
+- Identify a synchronous code block
+- Identify an asynchronous code block
 
 ## Introduction
 
@@ -15,31 +15,32 @@ text, they're listening for clicks and scrolls, they're streaming a SoundCloud
 demo in a background tab, and they're running JavaScript programs.
 
 To do all that work efficiently, browsers use an _asynchronous_ execution model.
-That's a fancy way of saying "they do little bits of lots of tasks until
-the tasks are done."
+That's a fancy way of saying "they do little bits of lots of tasks until the
+tasks are done."
 
-In this lesson we'll build a foundation of understanding around the
-asynchronous execution model of JavaScript.
+In this lesson we'll build a foundation of understanding around the asynchronous
+execution model of JavaScript.
 
 ## Establish a Metaphor for Synchronous Versus Asynchronous Work
 
 Let's imagine a chef in a kitchen preparing a big meal. There's only one chef in
-this kitchen. The chef could prepare a turkey, then prepare some potatoes,
-then prepare some bread, then prepare green beans, and then serve it.
+this kitchen. The chef could prepare a turkey, then prepare some potatoes, then
+prepare some bread, then prepare green beans, and then serve it.
 
 Our diners would be treated to turkey, bread, green beans, and potatoes! This is
-not the goal. This meal was prepared in a _synchronous_ model: one-thing-after-the-other.
-Whatever happened "blocked" the rest of things that were waiting for work.
+not the goal. This meal was prepared in a _synchronous_ model:
+one-thing-after-the-other. Whatever happened "blocked" the rest of things that
+were waiting for work.
 
 _Instead_, our chef should move between each of these tasks quickly. The chef
 should use the _asynchronous_ execution model browsers use. They should stuff
-the Turkey, they should measure the ingredients for the bread, they should
-peel the potatoes, etc. in a loop, _as fast as possible_ so that all the tasks
-_seem_ to be advancing at the same time. If the chef were to adopt this
-_asynchronous_ model of work, the diners would be treated to piping-hot
-turkey, steaming potatoes, soft bread, and a fresh green beans.
+the Turkey, they should measure the ingredients for the bread, they should peel
+the potatoes, etc. in a loop, _as fast as possible_ so that all the tasks _seem_
+to be advancing at the same time. If the chef were to adopt this _asynchronous_
+model of work, the diners would be treated to piping-hot turkey, steaming
+potatoes, soft bread, and a fresh green beans.
 
-![](https://curriculum-content.s3.amazonaws.com/fewpjs/fewpjs-asynchrony/Image_42_AsynchronyIllustrations.png)
+![synch/asynch diagram](https://curriculum-content.s3.amazonaws.com/fewpjs/fewpjs-asynchrony/Image_42_AsynchronyIllustrations.png)
 
 ## Describe a Synchronous Code Block
 
@@ -51,10 +52,10 @@ let sum = 1 + 1; // Line 1
 let lis = document.querySelectorAll("li"); // Line 2
 ```
 
-In this case, when we hit the definition of `sum`, this work doesn't rely on
-any "questionable" or "unknowably long" process. As soon as the work of `Line
-1` is done, JavaScript will then go to work finding elements and assigning them
-to `lis` in Line 2.
+In this case, when we hit the definition of `sum`, this work doesn't rely on any
+"questionable" or "unknowably long" process. As soon as the work of `Line 1` is
+done, JavaScript will then go to work finding elements and assigning them to
+`lis` in Line 2.
 
 But let's consider a "blocking" operation. Imagine we had a synchronous function
 called `synchronousFetch("URL STRING")` that fetches data from the network.
@@ -66,8 +67,8 @@ console.log(tooMuchData);
 ```
 
 That work in Line 1 could take a long time (e.g. slow network), or might fail
-(e.g. failed login), or might retrieve a ***huge*** amount of data (e.g. The Human
-Genome).
+(e.g. failed login), or might retrieve a ***huge*** amount of data (e.g. The
+Human Genome).
 
 It's possible that the `let lis` in Line 2 _will never execute_! While
 JavaScript is executing `synchronousFetch` it will not be able to animate gifs,
@@ -77,13 +78,13 @@ the mashed potatoes grow cold and the boiled turkey congeals. Gross.
 
 ## Describe an Asynchronous Code Block
 
-Asynchronous code in JavaScript looks a lot like event handlers. And if we
-think about it, that makes sense. You tell JavaScript:
+Asynchronous code in JavaScript looks a lot like event handlers. And if we think
+about it, that makes sense. You tell JavaScript:
 
-> Hey, do this thing. _And then_ go do whatever maintenance you need:
-> animate that gif, play some audio from SoundCloud, whatever. But when that
-> first thing has an "I'm done" event, go **back** to it and do some work that
-> I defined in a function when I called it.
+> Hey, do this thing. _And then_ go do whatever maintenance you need: animate
+> that gif, play some audio from SoundCloud, whatever. But when that first thing
+> has an "I'm done" event, go **back** to it and do some work that I defined in
+> a function when I called it.
 
 Let's imagine a function called `asynchronousFetch` that takes as arguments:
 
@@ -129,16 +130,16 @@ function main(){
 main();
 ```
 
-We can copy and paste this into a DevTools console to see the result. It
-matches our default model of "how code runs."
+We can copy and paste this into a DevTools console to see the result. It matches
+our default model of "how code runs."
 
 ## Identify an Asynchronous Code Block
 
 The easiest asynchronous wrapper function is `window.setTimeout()`. It takes as
 arguments:
 
-* a `Function` (the "callback" function)
-* a `Number` representing milliseconds
+- a `Function` (the "callback" function)
+- a `Number` representing milliseconds
 
 The `setTimeout()` will wait the number of milliseconds and then execute the
 callback.
@@ -169,8 +170,8 @@ No, me first
 Hello World!
 ```
 
-JavaScript is so committed to trying to squeeze in work
-when it gets a chance that this has the exact same output!
+JavaScript is so committed to trying to squeeze in work when it gets a chance
+that this has the exact same output!
 
 ```js
 setTimeout(() => console.log('Hello World!'), 0) // 0 Milliseconds!!
