@@ -101,7 +101,7 @@ const lis = document.querySelectorAll("li"); // Line 2
 In this case, JavaScript _starts_ the `asynchronousFetch` in Line 1, and then
 sets `lis` in Line 2.  Some time later (who knows how long?), the fetch of data
 finishes and _that_ data is passed into the "callback" function as
-`tonOfGeneticData` &mdash; back on Line 1.
+`tonOfGeneticData` — back on Line 1.
 
 Most asynchronous functions in JavaScript have this quality of "being passed a
 callback function." It's a helpful tool for spotting asynchronous code "in the
