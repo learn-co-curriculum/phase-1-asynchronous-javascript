@@ -84,8 +84,8 @@ about it, that makes sense. You tell JavaScript:
 
 > Hey, do this thing. While you're waiting for that to finish, go do whatever
 > maintenance you need: animate that gif, play some audio from SoundCloud,
-> whatever. But when that first thing has an "I'm done" event, go **back** to it and
-> _then_ do some work that I defined in a function when I called it.
+> whatever. But when that first thing has an "I'm done" event, go **back** to it
+> and _then_ do some work that I defined in a function when I called it.
 
 Let's imagine a function called `asynchronousFetch` that takes two arguments:
 
@@ -118,7 +118,7 @@ left-to-right.
 ```js
 function getData(){
   console.log("2. Returning instantly available data.");
-  return [{name: "Dobby the House-Elf"}, {name: "Nagini"}];
+  return [{author: "Ta-Nehisi Coates"}, {author: "Cathy Park Hong"}];
 }
 
 function main(){
