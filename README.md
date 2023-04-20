@@ -255,8 +255,7 @@ I've been logged asynchronously!
 
 Most asynchronous functions in JavaScript have this quality of "being passed a
 callback function." It's a helpful tool for spotting asynchronous code "in the
-wild". We will learn more about the `setTimeout()` function and the Web API in
-the next lesson.
+wild". We will learn more about the `setTimeout()` function in the next lesson.
 
 For now, let's focus on _why_ this occurs. Why are asynchronous functions like
 `setTimeout()` treated differently from any other function?
@@ -293,14 +292,13 @@ we have to make it _asynchronous_.
 
 JavaScript in the browser has an asynchronous execution model. This fact has
 little impact when you're writing simple code, but when you start doing work
-that might block the browser you'll need to leverage asynchronous functions. In
-the following lesson, we will learn more about the browser environment and how
-the previously mentioned [web API] allows us to write asynchronous code.
+that might block the browser you'll need to leverage asynchronous functions.
 
 ## Resources
 
-- [Introducing Asynchronous JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Introducing)
-- [Call Stack Visualizer]
+- [Introducing Asynchronous JavaScript][async]
+- [Call Stack Visualizer][call stack visualizer]
 
-[call stack visualizer]: (https://www.jsv9000.app/)
-[web api]: (https://developer.mozilla.org/en-US/docs/Web/API)
+[async]:
+  https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Introducing
+[call stack visualizer]: https://www.jsv9000.app/
